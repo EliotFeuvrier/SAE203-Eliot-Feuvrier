@@ -6,7 +6,7 @@
 
         <div class="flex justify-around">
         <div class="ml-10">    
-        <h2 class="text-white font-big-shoulders-text lg:text-lg text-center">NOUS CONTACTER</h2>
+       <RouterLink to="/contact"> <h2 class="text-white font-big-shoulders-text lg:text-lg text-center">NOUS CONTACTER</h2> </RouterLink>
             <p class="text-white w-[255px] leading-2 mt-4 mb-4">Si vous avez la moindre question, contacter nous ci-dessus...</p>
         </div>
 

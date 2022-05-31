@@ -41,7 +41,7 @@
     </div>
     <p class="text-lg text-white mt-20 mr-20 mb-20 ">Créer en 2021 à Strasbourg, l’éléctro moods festival est un événement de 3 jours de musique réunissant les meilleurs artistes éléctro de la planète...</p>
     <div class="flex justify-center">
-      <bouton msg="Plus d'info"></bouton>
+    <RouterLink to="/festival"> <bouton msg="Plus d'info"></bouton> </RouterLink>
     </div>
   </div>
 </div>
@@ -53,7 +53,7 @@
       <hr class="border-b w-3/4 mt-6 border-white m-auto" />
     </div>
     <div class="flex justify-center">
-      <bouton msg="réserver"></bouton>
+    <RouterLink to="/reserver"> <bouton msg="réserver"></bouton> </RouterLink>
     </div>
   </div>
   
