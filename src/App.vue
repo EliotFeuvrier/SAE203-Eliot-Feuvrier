@@ -2,7 +2,7 @@
 
     <header1 />
 
-    
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, fugit pariatur facere suscipit explicabo vel quibusdam vitae voluptates sit nesciunt ut saepe doloribus sequi hic nemo dolorem blanditiis inventore. Minus.</p>
 
     <RouterView />
     
