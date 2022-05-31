@@ -46,7 +46,7 @@
         BILLET JOURNÉE PASS 3 JOURS ET OFFRES VIP DISPONIBLES
     </p>
     
-    <bouton class="mt-10 ml-40 pb-40" msg="réserver"></bouton>
+   <RouterLink to="/reserver"> <bouton class="mt-10 ml-40 pb-40" msg="réserver"></bouton> </RouterLink>
   </div>
 
 </main>

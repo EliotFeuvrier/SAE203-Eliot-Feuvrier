@@ -25,9 +25,9 @@
 </div>
 
 <div class="flex justify-center mt-8">
-  <CardProg class="mx-14" date="8 AVRIL 2022" name1="MARTIN SOLVEIG" name2="VLADIMIR CAUCHEMAR" name3="ZOMBOY" name4="LOST FREQUENCIES" name5="BILLX"></CardProg>
-  <CardProg class="mx-14" date="9 AVRIL 2022" name1="DJ SNAKE" name2="MARTIN GARRIX" name3="GABRY PONTE" name4="SEFA" name5="YUKSEK"></CardProg>
-  <CardProg class="mx-14" date="10 AVRIL 2022" name1="DAVID GUETTA" name2="MARSHMELLO" name3="ROBIN SCHLUZ" name4="PAUL KALKBRENNER" name5="TOBHI"></CardProg>
+ <RouterLink to="/programmation"> <CardProg class="mx-14" date="8 AVRIL 2022" name1="MARTIN SOLVEIG" name2="VLADIMIR CAUCHEMAR" name3="ZOMBOY" name4="LOST FREQUENCIES" name5="BILLX"></CardProg> </RouterLink> 
+ <RouterLink to="/programmation"> <CardProg class="mx-14" date="9 AVRIL 2022" name1="DJ SNAKE" name2="MARTIN GARRIX" name3="GABRY PONTE" name4="SEFA" name5="YUKSEK"></CardProg> </RouterLink>
+ <RouterLink to="/programmation"> <CardProg class="mx-14" date="10 AVRIL 2022" name1="DAVID GUETTA" name2="MARSHMELLO" name3="ROBIN SCHLUZ" name4="PAUL KALKBRENNER" name5="TOBHI"></CardProg> </RouterLink>
 </div>
 
 <div class="grid grid-cols-2 place-items-center">
