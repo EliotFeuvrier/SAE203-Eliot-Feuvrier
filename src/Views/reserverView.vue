@@ -82,9 +82,10 @@
     </div>
 </section>
 
-<div class="grid grid-cols-3 place-items-center">
+<div class="grid grid-cols-3 place-items-center pt-10">
     <img src="src\components\icones\panier.svg" alt="panier">
     <img src="src\components\icones\paiement.svg" alt="paiement">
+    <button class="bg-black rounded-2xl text-white px-16 py-6 hover:bg-Blue">ACHETER</button>
 </div>
 
     <div class="w-auto  pt-24 justify-around text-[35px] text-center font-semibold font-big-shoulders-text text-black">
