@@ -15,12 +15,12 @@
   <hr class="border-b w-1/3 border-white m-auto" />
 
   <div class="flex gap-4 mt-20 ml-10">
-    <img src="src\components\assets\fest-1.webp" alt="fest-1">
-    <img src="src\components\assets\fest-2.webp" alt="fest-2">
-    <img src="src\components\assets\fest-3.webp" alt="fest-3">
-    <img src="src\components\assets\fest-4.webp" alt="fest-4">
-    <img src="src\components\assets\fest-5.webp" alt="fest-5">
-    <img src="src\components\assets\fest-6.webp" alt="fest-6">
+    <img src="src/components/assets/fest-1.webp" alt="fest-1">
+    <img src="src/components/assets/fest-2.webp" alt="fest-2">
+    <img src="src/components/assets/fest-3.webp" alt="fest-3">
+    <img src="src/components/assets/fest-4.webp" alt="fest-4">
+    <img src="src/components/assets/fest-5.webp" alt="fest-5">
+    <img src="src/components/assets/fest-6.webp" alt="fest-6">
   </div>
 </div>
 
