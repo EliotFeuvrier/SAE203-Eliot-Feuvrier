@@ -70,11 +70,11 @@
 </template>
 
 <script>
-import CardProg from "../components/CardProg.vue"
+
 import bouton from "../components/bouton.vue"
 export default {
     name: "homeView",
 
-  components : { CardProg, bouton }
+  components : {  bouton }
 }
 </script>

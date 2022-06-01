@@ -26,6 +26,8 @@ import titre from "./icones/titre.vue";
 import { RouterLink, RouterView } from "vue-router";
 
 export default {
+name: "header",
+
   components:{ logo, titre }
 };
 
