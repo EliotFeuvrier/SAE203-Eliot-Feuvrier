@@ -10,9 +10,9 @@
     </div>
 
     <div class="flex ml-60">
-    <img class="mt-10 ml-52" src="src\components\icones\Logo-Festival-grand.svg" alt="logo grand">
+    <img class="mt-10 ml-52" src="/images/Logo-Festival-grand.svg" alt="logo grand">
     <div class="ml-[250px] mt-24">
-      <img src="src\components\icones\titre_2.svg" alt="icone-festival-2">
+      <img src="/images/titre_2.svg" alt="icone-festival-2">
       <p class="font-big-shoulders-text text-[25px] w-96 mt-8 text-white ">Créer en 2021 à Strasbourg, l’éléctro moods festival est une évenement de 3 jours de musique réunissant les meilleurs artistes éléctro de la planète...</p>
     </div>
     </div>
@@ -32,14 +32,14 @@ Ainsi du 8 au 10 Avril, de nombreux concerts seront proposés à Strasbourg pour
       <hr class="border-b w-1/3 mt-6 border-white m-auto" />
     </div>
     <div class="grid grid-cols-4 place-items-center">
-      <CardOrga image="src\components\assets\EliotFEUVRIER.jpg" desc="Fondateur" nom="ELIOT FEUVRIER"></CardOrga>
-      <CardOrga image="src\components\assets\NATHALIELEFEVRE.jpg" desc="Vice-présidente" nom="NATHALIE LEFÈVRE"></CardOrga>
-      <CardOrga image="src\components\assets\NICOLASNGUYEN.jpg" desc="Trésorier" nom="NICOLAS NGUYEN"></CardOrga>
-      <CardOrga image="src\components\assets\MARTINAGNIOLY.jpg" desc="Responsable communication" nom="MARTIN AGNIOLY"></CardOrga>
-      <CardOrga image="src\components\assets\MARIEPIRETTI.jpg" desc="Directrice de la programmation" nom="MARIE PIRETTI"></CardOrga>
-      <CardOrga image="src\components\assets\MICHELGIGNARD.jpg" desc="Directeur technique" nom="MICHEL GIGNARD"></CardOrga>
-      <CardOrga image="src\components\assets\HUGOMARCHAIS.jpg" desc="Directeur de la production" nom="HUGO MARCHAIS"></CardOrga>
-      <CardOrga image="src\components\assets\ROMAINLAFONT.jpg" desc="Responsable des partenariats" nom="ROMAIN LAFONT"></CardOrga>   
+      <CardOrga image="/images/EliotFEUVRIER.jpg" desc="Fondateur" nom="ELIOT FEUVRIER"></CardOrga>
+      <CardOrga image="/images/NATHALIELEFEVRE.jpg" desc="Vice-présidente" nom="NATHALIE LEFÈVRE"></CardOrga>
+      <CardOrga image="/images/NICOLASNGUYEN.jpg" desc="Trésorier" nom="NICOLAS NGUYEN"></CardOrga>
+      <CardOrga image="/images/MARTINAGNIOLY.jpg" desc="Responsable communication" nom="MARTIN AGNIOLY"></CardOrga>
+      <CardOrga image="/images/MARIEPIRETTI.jpg" desc="Directrice de la programmation" nom="MARIE PIRETTI"></CardOrga>
+      <CardOrga image="/images/MICHELGIGNARD.jpg" desc="Directeur technique" nom="MICHEL GIGNARD"></CardOrga>
+      <CardOrga image="/images/HUGOMARCHAIS.jpg" desc="Directeur de la production" nom="HUGO MARCHAIS"></CardOrga>
+      <CardOrga image="/images/ROMAINLAFONT.jpg" desc="Responsable des partenariats" nom="ROMAIN LAFONT"></CardOrga>   
     </div>
 
 

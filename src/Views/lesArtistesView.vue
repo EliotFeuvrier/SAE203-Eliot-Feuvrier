@@ -1,27 +1,27 @@
 <template>
     <main class="grid grid-cols-3 place-items-center">
-        <CardArtiste image="src\components\assets\martin-solveig-2.jpg" nom="MARTIN SOLVEIG"></CardArtiste>
-        <CardArtiste image="src\components\assets\Vladimir-Cauchemar.jpg" nom="VLADIMIR CAUCHEMAR"></CardArtiste>
-        <CardArtiste image="src\components\assets\Zomboy.jpg" nom="ZOMBOY"></CardArtiste>
-        <CardArtiste image="src\components\assets\Lost-frequencies.jpg" nom="LOST FREQNENCIES"></CardArtiste>
-        <CardArtiste image="src\components\assets\Billx.jpg" nom="BILLX"></CardArtiste>
-        <CardArtiste image="src\components\assets\Monolink.jpg" nom="MONOLINK"></CardArtiste>
-        <CardArtiste image="src\components\assets\Kungs.jpg" nom="KUNGS"></CardArtiste>
-        <CardArtiste image="src\components\assets\DJ-Snake-2.jpg" nom="DJ SNAKE"></CardArtiste>
-        <CardArtiste image="src\components\assets\Martin-garrix.jpg" nom="MARTIN GARRIX"></CardArtiste>
-        <CardArtiste image="src\components\assets\Gabry-Ponte.jpg" nom="GABRY PONTE"></CardArtiste>
-        <CardArtiste image="src\components\assets\Sefa.jpg" nom="SEFA"></CardArtiste>
-        <CardArtiste image="src\components\assets\Yuksek.jpg" nom="YUKSEK"></CardArtiste>
-        <CardArtiste image="src\components\assets\Prezioso.jpg" nom="PREZIOSO"></CardArtiste>
-        <CardArtiste image="src\components\assets\Umbree.jpg" nom="UMBREE"></CardArtiste>
-        <CardArtiste image="src\components\assets\Makoto-San.jpg" nom="MAKOTO SAN"></CardArtiste>
-        <CardArtiste image="src\components\assets\David-Guetta-2.jpg" nom="DAVID GUETTA"></CardArtiste>
-        <CardArtiste image="src\components\assets\Marshmellow.jpg" nom="MARSHMELLOW"></CardArtiste>
-        <CardArtiste image="src\components\assets\Robin-Schluz.jpg" nom="ROBIN SCHLUZ"></CardArtiste>
-        <CardArtiste image="src\components\assets\Paul-Kalkbrenner.jpg" nom="PAUL KALKBRENNER"></CardArtiste>
-        <CardArtiste image="src\components\assets\Tobhi.jpg" nom="TOBHI"></CardArtiste>
-        <CardArtiste image="src\components\assets\Lumix.jpg" nom="LUM!X"></CardArtiste>
-        <CardArtiste image="src\components\assets\Kasst.jpg" nom="KAS:ST"></CardArtiste>
+        <CardArtiste image="/images/martin-solveig-2.jpg" nom="MARTIN SOLVEIG"></CardArtiste>
+        <CardArtiste image="/images/Vladimir-Cauchemar.jpg" nom="VLADIMIR CAUCHEMAR"></CardArtiste>
+        <CardArtiste image="/images/Zomboy.jpg" nom="ZOMBOY"></CardArtiste>
+        <CardArtiste image="/images/Lost-frequencies.jpg" nom="LOST FREQNENCIES"></CardArtiste>
+        <CardArtiste image="/images/Billx.jpg" nom="BILLX"></CardArtiste>
+        <CardArtiste image="/images/Monolink.jpg" nom="MONOLINK"></CardArtiste>
+        <CardArtiste image="/images/Kungs.jpg" nom="KUNGS"></CardArtiste>
+        <CardArtiste image="/images/DJ-Snake-2.jpg" nom="DJ SNAKE"></CardArtiste>
+        <CardArtiste image="/images/Martin-garrix.jpg" nom="MARTIN GARRIX"></CardArtiste>
+        <CardArtiste image="/images/Gabry-Ponte.jpg" nom="GABRY PONTE"></CardArtiste>
+        <CardArtiste image="/images/Sefa.jpg" nom="SEFA"></CardArtiste>
+        <CardArtiste image="/images/Yuksek.jpg" nom="YUKSEK"></CardArtiste>
+        <CardArtiste image="/images/Prezioso.jpg" nom="PREZIOSO"></CardArtiste>
+        <CardArtiste image="/images/Umbree.jpg" nom="UMBREE"></CardArtiste>
+        <CardArtiste image="/images/Makoto-San.jpg" nom="MAKOTO SAN"></CardArtiste>
+        <CardArtiste image="/images/David-Guetta-2.jpg" nom="DAVID GUETTA"></CardArtiste>
+        <CardArtiste image="/images/Marshmellow.jpg" nom="MARSHMELLOW"></CardArtiste>
+        <CardArtiste image="/images/Robin-Schluz.jpg" nom="ROBIN SCHLUZ"></CardArtiste>
+        <CardArtiste image="/images/Paul-Kalkbrenner.jpg" nom="PAUL KALKBRENNER"></CardArtiste>
+        <CardArtiste image="/images/Tobhi.jpg" nom="TOBHI"></CardArtiste>
+        <CardArtiste image="/images/Lumix.jpg" nom="LUM!X"></CardArtiste>
+        <CardArtiste image="/images/Kasst.jpg" nom="KAS:ST"></CardArtiste>
     </main>
 </template>
 

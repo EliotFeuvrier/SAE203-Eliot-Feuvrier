@@ -2,7 +2,7 @@
     <main class=" min-h-screen bg-black">
 
   <div class="flex pt-60 ml-60 ">
-    <img class="" src="src\components\assets\Martin-Sloveig-1.webp" alt="Martin-Solveig-1">
+    <img class="" src="/images/Martin-Sloveig-1.webp" alt="Martin-Solveig-1">
   
     <div class="flex flex-col font-big-shoulders-text text-xl w-[500px] ml-16 text-white">
       <p class="mb-6">VENDREDI 8 AVRIL</p>
@@ -15,7 +15,7 @@
 
 
     <div class="flex pt-60 ml-60 ">
-    <img class="" src="src\components\assets\DJ-Snake-1.webp" alt="DJ-Snake-1">
+    <img class="" src="/images/DJ-Snake-1.webp" alt="DJ-Snake-1">
   
     <div class="flex flex-col font-big-shoulders-text text-xl w-[500px] ml-16 text-white">
       <p class="mb-6">SAMEDI 9 AVRIL</p>
@@ -28,7 +28,7 @@
 
 
       <div class="flex pt-60 ml-60 pb-60 ">
-    <img class="" src="src\components\assets\David-Guetta-1.webp" alt="DJ-Snake-1">
+    <img class="" src="/images/David-Guetta-1.webp" alt="DJ-Snake-1">
   
     <div class="flex flex-col font-big-shoulders-text text-xl w-[500px] ml-16 text-white">
       <p class="mb-6">DIMANCHE 10 AVRIL</p>

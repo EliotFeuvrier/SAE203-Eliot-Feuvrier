@@ -19,21 +19,21 @@
       
       <h1 class="font-big-shoulders-text font-bold text-2xl ml-2 my-5">Icônes</h1>
       <div class="flex gap-2 w-96 mb-20 bg-black rounded-md">
-                    <img src="src\components\icones\facebook.svg" alt="Logo Facebook" class="w-1/3 lg:scale-50">
-                    <img src="src\components\icones\instagram.svg" alt="Logo Instagram" class="w-1/3 lg:scale-50">
-                    <img src="src\components\icones\linkedin.svg" alt="Logo Linkedin" class="w-1/3 lg:scale-50">
-                    <img src="src\components\icones\twitter.svg" alt="Logo Twitter" class="w-1/3 lg:scale-50">
+                    <img src="/images/facebook.svg" alt="Logo Facebook" class="w-1/3 lg:scale-50">
+                    <img src="/images/instagram.svg" alt="Logo Instagram" class="w-1/3 lg:scale-50">
+                    <img src="/images/linkedin.svg" alt="Logo Linkedin" class="w-1/3 lg:scale-50">
+                    <img src="/images/twitter.svg" alt="Logo Twitter" class="w-1/3 lg:scale-50">
                 </div>
       
       <h1 class="font-big-shoulders-text font-bold text-2xl ml-2 my-5">Composants</h1>
       
-      <CardArtiste image="src\components\assets\martin-solveig-2.jpg" nom="MARTIN SOLVEIG"></CardArtiste>
+      <CardArtiste image="/images/martin-solveig-2.jpg" nom="MARTIN SOLVEIG"></CardArtiste>
       <div class="flex place-items-center gap-2">
         <div class="bg-black rounded-lg p-4 w-max">
           <CardProg class="mx-14" date="8 AVRIL 2022" name1="MARTIN SOLVEIG" name2="VLADIMIR CAUCHEMAR" name3="ZOMBOY" name4="LOST FREQUENCIES" name5="BILLX"></CardProg>
         </div>
         <div class="bg-black rounded-lg p-4 w-max">
-        <CardOrga image="src\components\assets\EliotFEUVRIER.jpg" desc="Fondateur" nom="ELIOT FEUVRIER"></CardOrga>
+        <CardOrga image="/images/EliotFEUVRIER.jpg" desc="Fondateur" nom="ELIOT FEUVRIER"></CardOrga>
         </div>
         <div class="bg-black rounded-lg p-4 w-max">
         <bouton msg="Plus d'info"></bouton> 

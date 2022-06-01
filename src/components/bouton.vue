@@ -4,7 +4,7 @@
     <button class="bg-black border-solid border-2 border-white rounded-xl">
       <div class="flex">
       <p class="text-white font-big-shoulders-text m-2 uppercase"> {{msg}} </p>
-      <img src="./icones/Arrow.svg" alt="flêche">
+      <img src="/images/Arrow.svg" alt="flêche">
       </div>
 <slot/>
 </button>

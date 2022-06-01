@@ -10,13 +10,13 @@
         <div class="flex bg-white justify-between border-b pt-5 pb-5 border-black text-lg text-black px-4"> 
         <p>Pass 3 Jours</p>
         <p>99.00€</p> 
-        <img src="src\components\icones\menu-quantite.jpg" alt="menu quantité">
+        <img src="/images/menu-quantite.jpg" alt="menu quantité">
          </div>
 
         <div class="flex rounded-b-2xl bg-white justify-between pt-5 pb-5 text-lg text-black px-4"> 
         <p>Pass VIP 3 Jours</p>
         <p>299.00€</p> 
-        <img src="src\components\icones\menu-quantite.jpg" alt="Menu quantité"> 
+        <img src="/images/menu-quantite.jpg" alt="Menu quantité"> 
         </div>
 
     </div>
@@ -30,13 +30,13 @@
         <div class="flex bg-white justify-between border-b pt-5 pb-5 border-black text-lg text-black px-4"> 
         <p>Pass Journée</p>
         <p>36.00€</p> 
-        <img src="src\components\icones\menu-quantite.jpg" alt="menu quantité">
+        <img src="/images/menu-quantite.jpg" alt="menu quantité">
          </div>
 
         <div class="flex rounded-b-2xl bg-white justify-between pt-5 pb-5 text-lg text-black px-4"> 
         <p>Pass VIP Journée</p>
         <p>89.00€</p> 
-        <img src="src\components\icones\menu-quantite.jpg" alt="Menu quantité"> 
+        <img src="/images/menu-quantite.jpg" alt="Menu quantité"> 
         </div>
 
     </div>
@@ -50,13 +50,13 @@
         <div class="flex bg-white justify-between border-b pt-5 pb-5 border-black text-lg text-black px-4"> 
         <p>Pass Journée</p>
         <p>36.00€</p> 
-        <img src="src\components\icones\menu-quantite.jpg" alt="menu quantité">
+        <img src="/images/menu-quantite.jpg" alt="menu quantité">
          </div>
 
         <div class="flex rounded-b-2xl bg-white justify-between pt-5 pb-5 text-lg text-black px-4"> 
         <p>Pass VIP Journée</p>
         <p>89.00€</p> 
-        <img src="src\components\icones\menu-quantite.jpg" alt="Menu quantité"> 
+        <img src="/images/menu-quantite.jpg" alt="Menu quantité"> 
         </div>
 
     </div>
@@ -70,21 +70,21 @@
         <div class="flex bg-white justify-between border-b pt-5 pb-5 border-black text-lg text-black px-4"> 
         <p>Pass Journée</p>
         <p>36.00€</p> 
-        <img src="src\components\icones\menu-quantite.jpg" alt="menu quantité">
+        <img src="/images/menu-quantite.jpg" alt="menu quantité">
          </div>
 
         <div class="flex rounded-b-2xl bg-white justify-between pt-5 pb-5 text-lg text-black px-4"> 
         <p>Pass VIP Journée</p>
         <p>89.00€</p> 
-        <img src="src\components\icones\menu-quantite.jpg" alt="Menu quantité"> 
+        <img src="/images/menu-quantite.jpg" alt="Menu quantité"> 
         </div>
 
     </div>
 </section>
 
 <div class="grid grid-cols-3 place-items-center pt-10">
-    <img src="src\components\icones\panier.svg" alt="panier">
-    <img src="src\components\icones\paiement.svg" alt="paiement">
+    <img src="/images/panier.svg" alt="panier">
+    <img src="/images/paiement.svg" alt="paiement">
     <button class="bg-black rounded-2xl text-white px-16 py-6 hover:bg-Blue">ACHETER</button>
 </div>
 

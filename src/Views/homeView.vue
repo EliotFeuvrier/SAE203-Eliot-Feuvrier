@@ -16,11 +16,11 @@
 
   <div class="flex gap-4 mt-20 ml-10">
     <img src="/images/fest1.webp" alt="fest-1">
-    <img src="src/components/assets/fest-2.webp" alt="fest-2">
-    <img src="src/components/assets/fest-3.webp" alt="fest-3">
-    <img src="src/components/assets/fest-4.webp" alt="fest-4">
-    <img src="src/components/assets/fest-5.webp" alt="fest-5">
-    <img src="src/components/assets/fest-6.webp" alt="fest-6">
+    <img src="/images/fest-2.webp" alt="fest-2">
+    <img src="/images/fest-3.webp" alt="fest-3">
+    <img src="/images/fest-4.webp" alt="fest-4">
+    <img src="/images/fest-5.webp" alt="fest-5">
+    <img src="/images/fest-6.webp" alt="fest-6">
   </div>
 </div>
 
@@ -31,7 +31,7 @@
 </div>
 
 <div class="grid grid-cols-2 place-items-center">
-  <img class="mt-40" src="src\components\icones\Logo-Festival-grand.svg" alt="logo grand">
+  <img class="mt-40" src="/images/Logo-Festival-grand.svg" alt="logo grand">
   <div>
     <div class="w-auto  mt-40 justify-around text-[35px] text-center font-big-shoulders-text text-white">
       <h2>
@@ -58,7 +58,7 @@
   </div>
   
   <div class="mt-20 mb-40">
-    <img src="src\components\assets\image-festival-6.jpg" alt="image-festival-6">
+    <img src="/images/image-festival-6.jpg" alt="image-festival-6">
   </div>
 </div>
 

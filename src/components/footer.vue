@@ -12,10 +12,10 @@
             <div class="  grid place-items-center">
                 <h2 class="text-white font-big-shoulders-text text-lg text-center">NOUS SUIVRE</h2>
                 <div class="flex gap-2 w-96 mb-20">
-                    <img src="./icones/facebook.svg" alt="Logo Facebook" class="w-1/3 lg:scale-50">
-                    <img src="./icones/instagram.svg" alt="Logo Instagram" class="w-1/3 lg:scale-50">
-                    <img src="./icones/linkedin.svg" alt="Logo Linkedin" class="w-1/3 lg:scale-50">
-                    <img src="./icones/twitter.svg" alt="Logo Twitter" class="w-1/3 lg:scale-50">
+                    <img src="/images/facebook.svg" alt="Logo Facebook" class="w-1/3 lg:scale-50">
+                    <img src="/images/instagram.svg" alt="Logo Instagram" class="w-1/3 lg:scale-50">
+                    <img src="/images/linkedin.svg" alt="Logo Linkedin" class="w-1/3 lg:scale-50">
+                    <img src="/images/twitter.svg" alt="Logo Twitter" class="w-1/3 lg:scale-50">
                 </div>
             </div>
         
