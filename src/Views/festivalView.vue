@@ -52,10 +52,10 @@ Ainsi du 8 au 10 Avril, de nombreux concerts seront proposés à Strasbourg pour
     </div>
 
     <div class="flex justify-evenly mt-20 pb-20">
-      <img src="src\components\icones\NRJ.webp" alt="">
-      <img src="src\components\icones\action-lift.webp" alt="">
-      <img src="src\components\icones\Pathé.webp" alt="">
-      <img src="src\components\icones\Star.webp" alt="">
+      <img src="/images/NRJ.webp" alt="">
+      <img src="/images/action-lift.webp" alt="">
+      <img src="/images/Pathé.webp" alt="">
+      <img src="/images/Star.webp" alt="">
     </div>
 
 </main>
