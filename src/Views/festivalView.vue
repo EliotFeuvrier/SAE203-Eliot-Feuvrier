@@ -32,14 +32,16 @@ Ainsi du 8 au 10 Avril, de nombreux concerts seront proposés à Strasbourg pour
       <hr class="border-b w-1/3 mt-6 border-white m-auto" />
     </div>
     <div class="grid grid-cols-4 place-items-center">
-      <CardOrga image="/images/EliotFEUVRIER.jpg" desc="Fondateur" nom="ELIOT FEUVRIER"></CardOrga>
+            <CardOrga v-for="organisateurs in listeorganisateurs" :key="organisateurs.id" :image="organisateurs.image" :desc="organisateurs.desc" :nom="organisateurs.nom"></CardOrga>
+
+     <!-- <CardOrga image="/images/EliotFEUVRIER.jpg" desc="Fondateur" nom="ELIOT FEUVRIER"></CardOrga>
       <CardOrga image="/images/NATHALIELEFEVRE.jpg" desc="Vice-présidente" nom="NATHALIE LEFÈVRE"></CardOrga>
       <CardOrga image="/images/NICOLASNGUYEN.jpg" desc="Trésorier" nom="NICOLAS NGUYEN"></CardOrga>
       <CardOrga image="/images/MARTINAGNIOLY.jpg" desc="Responsable communication" nom="MARTIN AGNIOLY"></CardOrga>
       <CardOrga image="/images/MARIEPIRETTI.jpg" desc="Directrice de la programmation" nom="MARIE PIRETTI"></CardOrga>
       <CardOrga image="/images/MICHELGIGNARD.jpg" desc="Directeur technique" nom="MICHEL GIGNARD"></CardOrga>
       <CardOrga image="/images/HUGOMARCHAIS.jpg" desc="Directeur de la production" nom="HUGO MARCHAIS"></CardOrga>
-      <CardOrga image="/images/ROMAINLAFONT.jpg" desc="Responsable des partenariats" nom="ROMAIN LAFONT"></CardOrga>   
+      <CardOrga image="/images/ROMAINLAFONT.jpg" desc="Responsable des partenariats" nom="ROMAIN LAFONT"></CardOrga>  --> 
     </div>
 
 
@@ -69,9 +71,59 @@ Ainsi du 8 au 10 Avril, de nombreux concerts seront proposés à Strasbourg pour
 <script>
 import CardOrga from "../components/CardOrga.vue"
 
+// Fonctions Firestore
+import { 
+    getFirestore, 
+    collection, 
+    onSnapshot, 
+
+} from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js'
+
+
+// Fonctions Storage
+import { 
+    getStorage, 
+    ref, 
+    getDownloadURL, 
+} from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js'
+
 export default {
   name: "festivalView",
-  components: {CardOrga}
+  components: {CardOrga},
 
-  };
+  data() {
+    return {
+      listeorganisateurs: [],
+    };
+  },
+  mounted() {
+    this.getorganisateurs();
+  },
+  methods: {
+    async getorganisateurs() {
+      const firestore = getFirestore();
+      const dborganisateurs = collection(firestore, "organisateurs");
+      const query = await onSnapshot(dborganisateurs, (snapshot) => {
+        console.log("query", query);
+        this.listeorganisateurs = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        this.listeorganisateurs.forEach(function (personne) {
+          const storage = getStorage();
+          const spaceRef = ref(storage, "organisateurs/" + personne.image);
+          getDownloadURL(spaceRef)
+            .then((url) => {
+              personne.image = url;
+              console.log("personne", personne);
+            })
+            .catch((error) => {
+              console.log("erreur downloadUrl", error);
+            });
+        });
+        console.log("listeorganisateurs", this.listeorganisateurs);
+      });
+    },
+  },
+};
 </script>

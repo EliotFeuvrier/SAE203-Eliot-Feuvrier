@@ -9,6 +9,7 @@ import lesartistesView from '../Views/lesArtistesView.vue'
 import programmeView from '../Views/programmeView.vue' 
 import PageNotFound from '../Views/PageNotFound.vue'
 import Guidedestyles from '../Views/Guidedestyles.vue'
+import CreateArtisteView from '../Views/CreateArtisteView.vue'
 
 const router = createRouter ({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -23,6 +24,7 @@ const router = createRouter ({
         {path: '/programmation', name: 'programmeView', component: programmeView},
         {path: '/:catchAll(.*)', component: PageNotFound},
         {path: '/Guidedestyles', name: 'Guidedestyles', component: Guidedestyles},
+        {path: '/CreateArtiste', name: 'CreateArtiste', component: CreateArtisteView},
     ]
 })
 

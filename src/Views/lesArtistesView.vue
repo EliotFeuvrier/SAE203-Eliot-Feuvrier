@@ -1,6 +1,12 @@
 <template>
     <main class="grid grid-cols-3 place-items-center">
-        <CardArtiste image="/images/martin-solveig-2.jpg" nom="MARTIN SOLVEIG"></CardArtiste>
+
+                
+      
+      
+
+        <CardArtiste v-for="artiste in listeArtiste" :key="artiste.id" :image="artiste.image" :nom="artiste.nom"></CardArtiste>
+        <!--<CardArtiste image="/images/martin-solveig-2.jpg" nom="MARTIN SOLVEIG"></CardArtiste>
         <CardArtiste image="/images/Vladimir-Cauchemar.jpg" nom="VLADIMIR CAUCHEMAR"></CardArtiste>
         <CardArtiste image="/images/Zomboy.jpg" nom="ZOMBOY"></CardArtiste>
         <CardArtiste image="/images/Lost-frequencies.jpg" nom="LOST FREQNENCIES"></CardArtiste>
@@ -21,15 +27,68 @@
         <CardArtiste image="/images/Paul-Kalkbrenner.jpg" nom="PAUL KALKBRENNER"></CardArtiste>
         <CardArtiste image="/images/Tobhi.jpg" nom="TOBHI"></CardArtiste>
         <CardArtiste image="/images/Lumix.jpg" nom="LUM!X"></CardArtiste>
-        <CardArtiste image="/images/Kasst.jpg" nom="KAS:ST"></CardArtiste>
+        <CardArtiste image="/images/Kasst.jpg" nom="KAS:ST"></CardArtiste>-->
     </main>
 </template>
 
 <script>
 import CardArtiste from "../components/CardArtiste.vue"
 
+// Fonctions Firestore
+import { 
+    getFirestore, 
+    collection, 
+    onSnapshot, 
+
+} from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js'
+
+
+// Fonctions Storage
+import { 
+    getStorage, 
+    ref, 
+    getDownloadURL, 
+} from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js'
+
 export default {
 
-components: {CardArtiste}
+components: {CardArtiste},
+
+  data() {
+    return {
+      listeArtiste: [],
+    };
+  },
+  mounted() {
+    this.getArtiste();
+  },
+  methods: {
+    async getArtiste() {
+      const firestore = getFirestore();
+      const dbArtiste = collection(firestore, "artiste");
+      const query = await onSnapshot(dbArtiste, (snapshot) => {
+        console.log("query", query);
+        this.listeArtiste = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        this.listeArtiste.forEach(function (personne) {
+          const storage = getStorage();
+          const spaceRef = ref(storage, "artiste/" + personne.image);
+          getDownloadURL(spaceRef)
+            .then((url) => {
+              personne.image = url;
+              console.log("personne", personne);
+            })
+            .catch((error) => {
+              console.log("erreur downloadUrl", error);
+            });
+        });
+        console.log("listeArtiste", this.listeArtiste);
+      });
+    },
+  },
+
+
 }
 </script>
