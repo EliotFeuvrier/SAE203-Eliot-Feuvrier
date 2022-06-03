@@ -12,11 +12,22 @@
             </RouterLink>
         </div>
         </div> 
+
+        <div class="flex justify-center items-center gap-2">
+      
+        <input
+          class=" border-2 border-Grey w-1/4 text-lg pl-2 text-Grey"
+          placeholder="rechercher un artiste"
+          type="text"
+          v-model="filter"
+        />
+        </div>
+        
     <main class="grid grid-cols-3 place-items-center">
 
              
       
-      <div v-for="artiste in listeArtiste" :key="artiste.id" class=" w-max m-10 pb-16 pt-16">
+      <div v-for="artiste in filterByName" :key="artiste.id" class=" w-max m-10 pb-16 pt-16">
         <img class="rounded-t-2xl" :src="artiste.image" alt="">
         
         <div class="bg-black rounded-b-2xl">
@@ -61,7 +72,6 @@ import CardArtiste from "../components/CardArtiste.vue"
 import bouton2 from '../components/bouton2.vue'
 import modifier from '../components/icones/modifier.vue'
 import supprimer from '../components/icones/supprimer.vue'
-
 // Fonctions Firestore
 import { 
     getFirestore, 
@@ -85,8 +95,30 @@ components: {CardArtiste, bouton2, modifier, supprimer },
   data() {
     return {
       listeArtiste: [],
+      filter:''
     };
   },
+
+ computed: {
+    orderByName: function () {
+      return this.listeArtiste.sort(function (a, b) {
+        if (a.nom < b.nom) return -1;
+        if (a.nom > b.nom) return 1;
+        return 0;
+      });
+    },
+    filterByName: function () {
+      if (this.filter.length > 0) {
+        let filter = this.filter.toLowerCase();
+        return this.orderByName.filter(function (artiste) {
+          return artiste.nom.toLowerCase().includes(filter);
+        });
+      } else {
+        return this.orderByName;
+      }
+    },
+  },
+
   mounted() {
     this.getArtiste();
   },
