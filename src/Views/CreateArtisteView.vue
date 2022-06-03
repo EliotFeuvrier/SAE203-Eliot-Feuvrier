@@ -12,7 +12,7 @@
         </div>
         <div class="flex flex-col text-Grey text-lg">
           <input
-            class="my-4 mr-8 border-2 border-Grey"
+            class="my-4 pl-2 mr-8 border-2 border-Grey"
             placeholder="NOM"
             v-model="artiste.nom"
             required

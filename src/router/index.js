@@ -10,6 +10,8 @@ import programmeView from '../Views/programmeView.vue'
 import PageNotFound from '../Views/PageNotFound.vue'
 import Guidedestyles from '../Views/Guidedestyles.vue'
 import CreateArtisteView from '../Views/CreateArtisteView.vue'
+import DeleteArtisteView from '../Views/DeleteArtisteView.vue'
+import UpdateArtisteView from '../Views/UpdateArtisteView.vue'
 
 const router = createRouter ({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -25,6 +27,8 @@ const router = createRouter ({
         {path: '/:catchAll(.*)', component: PageNotFound},
         {path: '/Guidedestyles', name: 'Guidedestyles', component: Guidedestyles},
         {path: '/CreateArtiste', name: 'CreateArtiste', component: CreateArtisteView},
+        {path: '/DeleteArtiste/:id', name: 'DeleteArtiste', component: DeleteArtisteView},
+        {path: '/UpdateArtiste/:id', name: 'UpdateArtiste', component: UpdateArtisteView},
     ]
 })
 

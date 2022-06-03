@@ -1,11 +1,36 @@
 <template>
+
+  <div class="flex justify-center my-10">
+        
+        
+        <div>
+            <RouterLink to="/CreateArtiste">
+            <bouton2 msg="AJOUTER UN ARTISTE"
+              type="submit"
+            >
+            </bouton2>
+            </RouterLink>
+        </div>
+        </div> 
     <main class="grid grid-cols-3 place-items-center">
 
-                
+             
       
-      
+      <div v-for="artiste in listeArtiste" :key="artiste.id" class=" w-max m-10 pb-16 pt-16">
+        <img class="rounded-t-2xl" :src="artiste.image" alt="">
+        
+        <div class="bg-black rounded-b-2xl">
+            <div class=" flex justify-between p-2">
+             <RouterLink :to="{ name: 'UpdateArtiste', params: { id: artiste.id } }"> <modifier/>  </RouterLink>
+             <RouterLink :to="{ name: 'DeleteArtiste', params: { id: artiste.id } }"> <supprimer/> </RouterLink>
+            </div>
+          <p class=" font-big-shoulders-text text-center  text-[25px] text-white py-2 uppercase"> {{artiste.nom}} </p>
+          
+        </div>
+        
+    </div>
 
-        <CardArtiste v-for="artiste in listeArtiste" :key="artiste.id" :image="artiste.image" :nom="artiste.nom"></CardArtiste>
+        <!--<CardArtiste v-for="artiste in listeArtiste" :key="artiste.id" :image="artiste.image" :nom="artiste.nom"></CardArtiste>-->
         <!--<CardArtiste image="/images/martin-solveig-2.jpg" nom="MARTIN SOLVEIG"></CardArtiste>
         <CardArtiste image="/images/Vladimir-Cauchemar.jpg" nom="VLADIMIR CAUCHEMAR"></CardArtiste>
         <CardArtiste image="/images/Zomboy.jpg" nom="ZOMBOY"></CardArtiste>
@@ -33,6 +58,9 @@
 
 <script>
 import CardArtiste from "../components/CardArtiste.vue"
+import bouton2 from '../components/bouton2.vue'
+import modifier from '../components/icones/modifier.vue'
+import supprimer from '../components/icones/supprimer.vue'
 
 // Fonctions Firestore
 import { 
@@ -52,7 +80,7 @@ import {
 
 export default {
 
-components: {CardArtiste},
+components: {CardArtiste, bouton2, modifier, supprimer },
 
   data() {
     return {
